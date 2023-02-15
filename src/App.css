@@ -1,0 +1,22 @@
+/* This is the app css file, all css designs in here apply to the entire application including all new pages */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Monocode-Regular-V01.02b';
+  /* This is how you can incorporate a different font besides the default, this font was downloaded off Dafont.com */
+  
+}
+
+body{
+  background-color: #000;
+  color: rgb(0, 0, 0);
+  
+}
+
+a{
+  color: rgb(0, 0, 0);
+}
+
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/cursors/cur-2/cur224.cur), auto !important;} /* End https://www.cursors-4u.com */
