@@ -61,6 +61,7 @@ export const Contact = () => {
                     <form method="POST" netlify data-netlify="true" data-netlify-recaptcha="true"
                     name="contact"
                     onSubmit="submit">
+                      <input type="hidden" name="form-name" value="contact" />
                       <label>NAME</label>
                       <input type="text" name="name" name="name"/>
                       <label>EMAIL</label>
