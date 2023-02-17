@@ -39,7 +39,7 @@ const InfoSection = ({
                             <TopLine>KAITCODES</TopLine>
                             <Heading >ABOUT ME</Heading>
                             <Subtitle>
-                                Recent CS graduate with most experience in bulding and hosting websites, UI/UX design and research, and data science: research and analysis.
+                                Fullstack developer with experience in bulding and hosting websites, UI/UX design and research, and data science: research and analysis.
                             </Subtitle>
                             <BottomLine>Currently learning: three.js & Blender</BottomLine>
 
