@@ -58,18 +58,18 @@ export const Contact = () => {
         
                     {/* <form ref={form} onSubmit={sendEmail}> */}
                     
-                    <form action="POST" data-netlify="true">
+                    <form method="POST" data-netlify="true" data-netlify-recaptcha="true"
+                    name="contact"
+                    onSubmit="submit">
                       <label>NAME</label>
-                      <input type="text" name="name" />
+                      <input type="text" name="name" name="name"/>
                       <label>EMAIL</label>
-                      <input type="email" name="email" />
+                      <input type="email" name="email" name="email"/>
                       <label>MESSAGE</label>
                         <textarea name="message" />
                       <input type="submit" value="SEND" />
-                      <div class="field">
-
-                        <div data-netlify-recaptch="true"></div>
-                      </div>
+                      <div data-netlify-recaptcha="true"></div>
+                      
                     </form>
 
               
