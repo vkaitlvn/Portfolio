@@ -58,7 +58,7 @@ export const Contact = () => {
         
                     {/* <form ref={form} onSubmit={sendEmail}> */}
                     
-                    <form method="POST" data-netlify="true" data-netlify-recaptcha="true"
+                    <form method="POST" netlify data-netlify="true" data-netlify-recaptcha="true"
                     name="contact"
                     onSubmit="submit">
                       <label>NAME</label>
