@@ -12,6 +12,11 @@ export const TopLine = styled.div`
   align-items: center;
   margin-top: 150px;
   text-align: left;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1rem;
+  }
+  
 `;
 
 export const Heading = styled.h1`

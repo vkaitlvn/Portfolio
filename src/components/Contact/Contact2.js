@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-// import emailjs from '@emailjs/browser';
 import { Container, Row, Col } from "react-bootstrap";
 
 import pic from "../../images/logo-no-background.png";
@@ -8,35 +7,11 @@ import './contact.css';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
-// import {
-//   REACT_APP_PUBLIC_KEY,
-//   REACT_APP_SERVICE_ID,
-//   REACT_APP_TEMPLATE_ID
-// } from '.env';
+
 
 
 export const Contact = () => {
-//   const form = useRef();
 
-//   const sendEmail = (e) => {
-//       e.preventDefault();
-  
-//       emailjs
-//       .sendForm(
-//           process.env.REACT_APP_SERVICE_ID, 
-//           process.env.REACT_APP_TEMPLATE_ID, 
-//           form.current,
-//           process.env.REACT_APP_PUBLIC_KEY
-//           )
-//         .then(
-//             (result) => {
-//             console.log(result.text);
-//             console.log("message sent");
-//         }, 
-//         (error) => {
-//             console.log(error.text);
-//         });
-//     };
 
 
   

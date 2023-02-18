@@ -107,6 +107,9 @@ export const TopLine = styled.div`
   margin-bottom: 16px;
   margin-top: 150px;
   text-align: center;
+  @media screen and (max-width: 480px) {
+    font-size: 1.5rem;
+  }
 `;
 
 
