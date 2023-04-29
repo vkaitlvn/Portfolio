@@ -24,7 +24,6 @@ import {
     SocialIconLink
         
 } from './FooterElements';
-import { Button } from '../ButtonElements4';
 
 const toggleHome = () => {
     scroll.scrollToTop()

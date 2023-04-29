@@ -35,7 +35,6 @@ const InfoSection = ({
                     <div className="row px-4 justify-content-center align-items-center">
                         <div className="col-lg-6 mb-4 mb-md-0">
 
-
                             <TopLine>KAITCODES</TopLine>
                             <Heading >ABOUT ME</Heading>
                             <Subtitle>
@@ -48,9 +47,6 @@ const InfoSection = ({
                                <ul>Javascript, HTML/CSS, Java, LINUX/UNIX, SQL, R, Python </ul>
                                
                             </Subtitle>
-                            
-
-
 
 
                         </div>
@@ -58,18 +54,7 @@ const InfoSection = ({
 
 
                         
-                        {/* <TrackVisibility>
-                        {({ isVisible }) =>
-                        <div className={isVisible ? "animate__animated animate__pulse" : ""}>
-                            <div className="col-lg-5 d-flex flex-column px-0 ps-lg-5 mt-5 mt-lg-0">
-
-                                <img 
-                                src={pic} 
-                                alt={"letter k in a circle"} 
-                                className="h-100 w-100" style={{objectFit:"cover"}}/>
-                            </div>
-                        </div>}
-                        </TrackVisibility> */}
+                    
                         <div className="col-lg-5 d-flex flex-column px-0 ps-lg-5 mt-5 mt-lg-0">
 
                             <TrackVisibility>

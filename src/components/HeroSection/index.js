@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 import Video from '../../video/bluehero.mp4';
-import Logo from '../../images/logo-no-background.png';
+// import Logo from '../../images/logo-no-background.png';
 import 'animate.css';
 import './Hero.css';
 import TrackVisibility from 'react-on-screen';
@@ -16,9 +16,17 @@ import {
   TopLine,
   Heading,
   Subtitle,
-  container
+  SocialIconLink,
+  SocialIcons
   
 } from './HeroElements';
+
+
+import { 
+  FiGithub,
+  FiLinkedin,
+  FiMail
+} from 'react-icons/fi';
 
 function HeroSection() {
   const [hover, setHover] = useState(false);
@@ -34,22 +42,51 @@ function HeroSection() {
 
         <HeroContent>
           
+        <TrackVisibility >
+            {({ isVisible }) =>
+            <div className={isVisible ? "animate__animated animate__fadeIn animate__slower" : ""} >
+
+        <TopLine>Welcome! I AM...</TopLine>
+        </div> }
+          </TrackVisibility>
+          
           <TrackVisibility >
             {({ isVisible }) =>
             <div className={isVisible ? "animate__animated animate__pulse animate__infinite animate__slower" : ""} >
-              <TopLine>WELCOME! I AM...</TopLine>
+
 
 
               <Heading>
                 KAITCODES
               </Heading>
-              <Subtitle>
-                  A programmer with a passion for designing and building.
-              </Subtitle>
+              
             </div> }
           </TrackVisibility>
-             <a href="mailto:brooks.kaitlynf@gmail.com" class="btn btn--contact">Contact</a>
-             <br/>
+
+          <TrackVisibility >
+            {({ isVisible }) =>
+            <div className={isVisible ? "animate__animated animate__fadeIn animate__slower" : ""} >
+            <Subtitle>
+                  A programmer with a passion for designing and building.
+              </Subtitle>
+              </div> }
+          </TrackVisibility>
+            
+
+        <SocialIcons>
+                            <SocialIconLink href="https://www.linkedin.com/in/kaitlyn-brooks-7661b71b6/" target="_blank" aria-label="LinkedIn">
+                                <FiLinkedin />
+                            </SocialIconLink>
+
+                            <SocialIconLink href="https://github.com/vkaitlvn" target="_blank" aria-label="Github">
+                                <FiGithub />
+                            </SocialIconLink>
+
+                            <SocialIconLink href="mailto:brooks.kaitlynf@gmail.com" class="" target="_blank" aria-label="Email">
+                                <FiMail />
+                            </SocialIconLink>
+                           
+                        </SocialIcons>
             
         </HeroContent>
 

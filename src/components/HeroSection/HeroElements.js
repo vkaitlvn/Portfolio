@@ -63,12 +63,15 @@ export const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 `;
 
 export const HeroH1 = styled.h1`
   color: #fff;
   font-size: 75px;
   text-align: center;
+  align-items: center;
+
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -86,6 +89,8 @@ export const HeroP = styled.p`
   text-align: center;
   max-width: 600px;
   font-style: italic;
+  align-items: center;
+
 
   @media screen and (max-width: 768px) {
     font-size: 24px;
@@ -110,17 +115,22 @@ export const TopLine = styled.div`
   @media screen and (max-width: 480px) {
     font-size: 1.5rem;
   }
+
+
 `;
 
 
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 3rem;
+  margin-top: 35px;
+  font-size: 5rem;
   line-height: 1.1;
   font-weight: 600;
+  font-style: bold;
   color: #fff;
   text-align: center;
+
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
@@ -132,8 +142,31 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 25px;
   line-height: 24px;
-  color: #93a0c9;
+  color: white;
   text-align: center;
 
+
   
+`;
+
+export const SocialIcons = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 60px;
+
+   
+`;
+
+export const SocialIconLink = styled.a`
+    color: #fff;
+    font-size: 40px;
+    padding-right: 20px;
+    font-style: bold;
+
+    &:hover {
+        color: #93a0c9;
+        transition: 0.3s ease-out;
+
+    }
 `;

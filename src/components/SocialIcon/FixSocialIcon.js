@@ -29,7 +29,7 @@ const Social = styled.div`
   }
 
   a {
-    font-size: 1.9rem;
+    font-size: 3rem;
     color: #fff;
     transition: 0.2s ease-in;
     &:hover {

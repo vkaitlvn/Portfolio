@@ -5,7 +5,6 @@ import styled from 'styled-components';
 
 export const Nav = styled.nav`
   background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
-  // turns black on scroll
   
   height: 80px;
   margin-top: -80px;
@@ -40,12 +39,13 @@ export const NavLogo = styled(LinkR)`
   display: flex;
   align-items: center;
   margin-left: 24px;
+  margin-top:20px;
   font-weight: bold;
   text-decoration: none;
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    color: #93a0c9;
+    color: #2b0080;
   }
 `;
 

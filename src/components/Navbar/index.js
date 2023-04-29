@@ -6,6 +6,11 @@ import PDF from '../../Documents/Resume.pdf';
 import { CgMenuRight } from 'react-icons/cg';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
+
+
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
+
 import {
   MobileIcon,
   Nav,
@@ -51,14 +56,28 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
 
           <NavbarContainer>
-            <NavLogo onClick={toggleHome} to='/'>
-              KAITCODES
-            </NavLogo>
+
+          <TrackVisibility>
+            {({ isVisible }) =>
+            <div className={isVisible ? "animate__animated animate__fadeInDown animate__slower" : ""}>
+              <NavLogo onClick={toggleHome} to='/'>
+                KAITCODES
+              </NavLogo>
+
+              </div> }
+            </TrackVisibility>
+              
 
             <MobileIcon onClick={toggle}>
               <CgMenuRight />
             </MobileIcon>
 
+
+            <TrackVisibility>
+            {({ isVisible }) =>
+            <div className={isVisible ? "animate__animated animate__fadeInDown animate__slower" : ""}>
+
+            
             <NavMenu>
               <NavItem>
                 <NavLinks
@@ -100,8 +119,10 @@ const Navbar = ({ toggle }) => {
                 </NavLinks>
               </NavItem>
 
+              
+
               <NavBtn>
-                {/* <NavBtnLink href = {PDF}>Resume</NavBtnLink> */}
+                
                 <a href = {PDF}>Resume</a>              
               </NavBtn>
 
@@ -110,6 +131,9 @@ const Navbar = ({ toggle }) => {
             
               
             </NavMenu>
+            </div> }
+            </TrackVisibility>
+            
 
             
             

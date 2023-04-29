@@ -12,6 +12,9 @@ import {
   NavBtnLink
 } from './SidebarElements';
 
+import PDF from '../../Documents/Resume.pdf';
+
+
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
@@ -64,16 +67,18 @@ const Sidebar = ({ isOpen, toggle }) => {
               Connect
           </SidebarLink>
 
+          
+
           <SidebarLink></SidebarLink>
 
 
-          <SidebarLink>
+          {/* <SidebarLink>
             <NavBtn>
-                  <NavBtnLink href = "http://www.yoursitename.com/resume.pdf"target = "_blank">Resume</NavBtnLink>
-                  {/* add domain name link here */}
+            <a href = {PDF}>Resume</a> 
+                 
                 
               </NavBtn>
-            </SidebarLink>
+            </SidebarLink> */}
         </SidebarMenu>
 
 

@@ -5,11 +5,10 @@ import projImg2 from "../../images/project2.png";
 import projImg3 from "../../images/filmfestdemo.png";
 import piano from "../../images/playablepiano.png";
 import calc from "../../images/calculatorproj.png";
-import Logo from '../../images/logo-no-background.png';
 import './Projects.css';
-import { 
-    FiGithub
-  } from 'react-icons/fi';
+// import { 
+//     FiGithub
+//   } from 'react-icons/fi';
 
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -40,7 +39,7 @@ export const Projects = () => {
 
     },
     {
-      title: "Brooklyn Film Festival",
+      title: "Brooklyn Film Fest",
       description: "An online flyer website for a Brooklyn Film Festival.",
       imgUrl: projImg3,
       lower: "Built with: REACTJS, HTML, CSS"
@@ -91,13 +90,13 @@ export const Projects = () => {
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">SITES</Nav.Link>
+                      <Nav.Link eventKey="first">1.</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">JS/HTML</Nav.Link>
+                      <Nav.Link eventKey="second">2.</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">JS GAMES</Nav.Link>
+                      <Nav.Link eventKey="third">3.</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated" : ""}>
@@ -116,6 +115,7 @@ export const Projects = () => {
 
                             <Btn>
                                 <BtnLink  Link to ={{ pathname: "https://developerdistrict.netlify.app"}} target="_blank" aria-label="devdistrictdemo">LIVE</BtnLink>
+                                
                                
                                
 
