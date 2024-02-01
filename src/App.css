@@ -5,18 +5,21 @@
   margin: 0;
   padding: 0;
   font-family: 'Monocode-Regular-V01.02b';
-  /* This is how you can incorporate a different font besides the default, this font was downloaded off Dafont.com */
   
 }
+
+
 
 body{
-  background-color: #000;
-  color: rgb(0, 0, 0);
+  /* background-color: */
+  background: rgb(76,29,83);
+  background: linear-gradient(90deg, rgb(9, 1, 9) 0%, rgb(153, 24, 204) 55%, rgb(177, 86, 16) 100%);
+
+
+/* background: rgb(105,1,205);
+background: linear-gradient(90deg, rgba(105,1,205,1) 21%, rgba(163,20,180,1) 51%, rgba(209,56,186,1) 81%); */
   
 }
 
-a{
-  color: rgb(0, 0, 0);
-}
 
-/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/games/gam-10/gam987.ani), url(https://cur.cursors-4u.net/games/gam-10/gam987.png), auto !important;} /* End https://www.cursors-4u.com */
+

@@ -14,10 +14,6 @@ function App() {
       <Switch>
         <Route path="/" component={Home} exact />
        
-        
-        
-
-
 
       </Switch>
       
@@ -26,6 +22,7 @@ function App() {
     
   );
 }
+
 
 export default App;
 

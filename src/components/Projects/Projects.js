@@ -1,190 +1,119 @@
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../../images/project1.png";
-import projImg2 from "../../images/project2.png";
-import projImg3 from "../../images/filmfestdemo.png";
-import piano from "../../images/playablepiano.png";
-import calc from "../../images/calculatorproj.png";
-import './Projects.css';
-// import { 
-//     FiGithub
-//   } from 'react-icons/fi';
+import React from 'react';
+import styled from 'styled-components';
+import ProjectCard from './ProjectCard';
 
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+const projectsData = [
+  {
+    id: 1,
+    title: 'DEVELOPER DISTRICT',
+    description: '',
+    image: 'image1',
+    link: 'https://developerdistrict.netlify.app/',
+  },
+  {
+    id: 2,
+    title: 'WEATHER FINDER',
+    description: '',
+    image: 'image2',
+    link: 'https://weatherdiscovery.netlify.app/',
+  },
+  {
+    id: 3,
+    title: 'INTERACTIVE PIANO',
+    description: '',
+    image: 'image3',
+    link: 'https://pianowidget.netlify.app/',
+  },
+  {
+    id: 3,
+    title: 'FILM FESTIVAL',
+    description: '',
+    image: 'image4',
+    link: 'https://brooklynfilmfestdemo.netlify.app/',
+  },
+  // ... other projects
+];
 
-import {
-    Btn,
-    BtnLink
-  } from './ProjectElements';
 
-export const Projects = () => {
-
-  const projects = [
-    {
-      title: "Developer District",
-      description: "An online social media platform for gamers.",
-      imgUrl: projImg1,
-      lower: "Built with: REACTJS, HTML, CSS, Firebase"
-      
-
-      
-
-    },
-    {
-      title: "Weather Application",
-      description: "An interactive weather application.",
-      imgUrl: projImg2,
-      lower: "Built with: weatherAPI, HTML, CSS, & JS"
-
-    },
-    {
-      title: "Brooklyn Film Fest",
-      description: "An online flyer website for a Brooklyn Film Festival.",
-      imgUrl: projImg3,
-      lower: "Built with: REACTJS, HTML, CSS"
-
-    }
-    
-   
-  ];
-
-  const projects2 = [
-    {
-      title: "Piano",
-      description: "A playable piano.",
-      imgUrl: piano,
-      lower: "Built with: HTML, CSS, & JS"
-    },
-    {
-      title: "Calculator",
-      description: "A basic calculator design",
-      imgUrl: calc,
-      lower: "Built with: ReactJS, CSS"
-    },
-   
-  ];
-
-  const projects3 = [
-    {
-      title: "Piano",
-      description: "A playable piano.",
-      imgUrl: piano,
-      lower: "Built with: HTML, CSS, & JS"
-    }
-   
-  ];
-
- 
-
+const Projects = () => {
   return (
-    <section className="project" id="projects">
+    <>
+                                <TopLine>MY WORK</TopLine>
+    <Heading id='projects'>PERSONAL PROJECTS</Heading>
+
+    <Body>
+      
       <Container>
-        <Row>
-          <Col size={12}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__pulse animate__slower": ""}>
-                <h2>PROJECTS</h2>
-                {/* <p><FiGithub/></p> */}
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">1.</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">2.</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">3.</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated" : ""}>
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
-
-                            <Btn>
-                                <BtnLink  Link to ={{ pathname: "https://developerdistrict.netlify.app"}} target="_blank" aria-label="devdistrictdemo">LIVE</BtnLink>
-                                
-                               
-                               
-
-                                <BtnLink  Link to ={{ pathname: "https://weatherdiscovery.netlify.app"}} target="_blank" aria-label="weatherdemo">LIVE</BtnLink>
-
-
-                                <BtnLink  Link to ={{ pathname: "https://brooklynfilmfestdemo.netlify.app"}} target="_blank" aria-label="filmfestdemo">LIVE</BtnLink>
-                              
-       
-                            </Btn>
-                            
-
-                        
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="second">
-                    <Row>
-                        {
-                          projects2.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
-                        
-                        <Btn>
-                                <BtnLink  Link to ={{ pathname: "https://pianowidget.netlify.app"}} target="_blank" aria-label="piano">LIVE</BtnLink>
-                                
-                              
-
-                                <BtnLink Link to ={{ pathname: "https://calculatordemo1.netlify.app"}} target="_blank" aria-label="calculator">LIVE</BtnLink>
-                               
-              
-                            </Btn>
-                      </Row>
-                    </Tab.Pane>
-
-                    <Tab.Pane eventKey="third">
-                        <Row>
-                            {
-                            projects3.map((project, index) => {
-                                return (
-                                <ProjectCard
-                                    key={index}
-                                    {...project}
-                                    />
-                                )
-                            })
-                            }
-                            
-                            <Btn>
-                                    <BtnLink  Link to ={{ pathname: "https://pianowidget.netlify.app"}} target="_blank" aria-label="piano">LIVE</BtnLink>
-                                
-                
-                            </Btn>
-                        </Row>
-                    </Tab.Pane>
-
-                  </Tab.Content>
-                </Tab.Container>
-              </div>}
-            </TrackVisibility>
-          </Col>
-        </Row>
+        {projectsData.map((project) => (
+          <ProjectColumn key={project.id}>
+            <ProjectCard {...project} />
+          </ProjectColumn>
+        ))}
       </Container>
-    </section>
-  )
-}
+      </Body>
+    </>
+  );
+};
+
 export default Projects;
+
+const Container = styled.div`
+  display: flex;
+  margin-top: 100px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1300px;
+  margin-right: 50px;
+
+  @media screen and (max-width: 980px) {
+    margin-right: -2px;
+  }
+`;
+
+const Heading = styled.h1`
+  margin-bottom: -24px;
+  margin-top: 180px;
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+
+
+  @media screen and (max-width: 480px) {
+    font-size: 32px;
+  }
+`;
+
+const ProjectColumn = styled.div`
+  flex: 0 0 calc(33.33% - 20px); /* Adjust the percentage and margin as needed */
+  margin: 10px;
+`;
+
+const Body = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  
+`;
+
+const TopLine = styled.div`
+  color: #a9b3d3;
+  font-size: 1.5rem;
+  // line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: -170px;
+  align-items: center;
+  margin-top: 150px;
+  text-align: center;
+
+  @media screen and (max-width: 480px) {
+    font-size: 1rem;
+  }
+  
+`;

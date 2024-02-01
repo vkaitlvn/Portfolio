@@ -35,12 +35,26 @@ export const Heading = styled.h1`
 
 export const Subtitle = styled.p`
   max-width: 440px;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 24px;
   color: #fff;
   align-items: center;
   text-align: left;
+  
+
+
+`;
+
+export const Subtitle2 = styled.p`
+  max-width: 440px;
+  margin-bottom: 35px;
+  font-size: 40px;
+  line-height: 24px;
+  color: #fff;
+  align-items: center;
+  text-align: left;
+
 
 
 `;
@@ -52,7 +66,7 @@ export const BottomLine = styled.div`
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: 150px;
   align-items: center;
   font-style: italic;
   text-align: left;

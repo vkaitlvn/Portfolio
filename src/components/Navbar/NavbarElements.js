@@ -4,7 +4,7 @@ import { Link as LinkR } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-  background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
+  background: ${({ scrollNav }) => (scrollNav ? 'rgba(53,10,60,0.517266281512605) 60%' : 'transparent')};
   
   height: 80px;
   margin-top: -80px;
@@ -15,6 +15,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+  
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -98,7 +99,6 @@ export const NavLinks = styled(LinkS)`
     transition: all 0.2s ease-in-out;
     background: #93a0c9;
     color: #fff;
-    padding:10px;
     
 
   }

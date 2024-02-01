@@ -1,8 +1,60 @@
-import styled from 'styled-components';
+import styled, {keyframes, css} from 'styled-components';
+
+const textclip = keyframes`
+  to {
+    background-position: 200% center;
+  }
+`;
+
+const cursorBlink = keyframes`
+  0%, 100% {
+    border-right: 2px solid transparent;
+  }
+  50% {
+    border-right: 2px solid #a9b3d3; /* Change color to match your text */
+  }
+`;
+
+const typingAnimation = keyframes`
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+`;
+
+// Styled component for the animated text
+const AnimatedText = styled.h3`
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #f9f7f8 67%,
+    #5b75dd 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  font-weight: bold;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: ${textclip} 4s linear infinite;
+  display: inline-block;
+  font-size: 120px;
+
+  @media only screen and (max-width: 600px) {
+    font-size: 18vw; /* Adjust the font size for smaller screens */
+  }
+`;
 
 
 export const HeroContainer = styled.div`
-  background: #000000;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,17 +158,22 @@ export const TopLine = styled.div`
   color: #a9b3d3;
   font-size: 2rem;
   line-height: 16px;
+  padding: 30px 30px;
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
   margin-top: 150px;
   text-align: center;
+  overflow: hidden;
+  white-space: nowrap; 
+  vertical-align: middle;
+
+  
+
   @media screen and (max-width: 480px) {
     font-size: 1.5rem;
   }
-
-
 `;
 
 

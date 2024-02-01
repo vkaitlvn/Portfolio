@@ -103,7 +103,7 @@ const Navbar = ({ toggle }) => {
                   exact='true'
                   offset={10}
                 >
-                  Projects
+                  Work
                 </NavLinks>
               </NavItem>
               <NavItem>
@@ -113,7 +113,7 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact='true'
-                  offset={-45}
+                  offset={10}
                 >
                   Connect
                 </NavLinks>
@@ -125,11 +125,7 @@ const Navbar = ({ toggle }) => {
                 
                 <a href = {PDF}>Resume</a>              
               </NavBtn>
-
-              
-
-            
-              
+      
             </NavMenu>
             </div> }
             </TrackVisibility>

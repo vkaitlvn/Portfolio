@@ -12,6 +12,6 @@ font-style: none;
 
 &:hover {
   transition: all 0.2s ease-in-out;
-  color: #01bf71;
+  color: #2b3036;
 }
 `;

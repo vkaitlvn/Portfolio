@@ -6,14 +6,18 @@ import {
    TopLine,
    Heading,
    Subtitle,
+   Subtitle2,
    BottomLine
 
 } from './InfoElements'
 
-import pic from "../../images/logo-white.svg";
+import pic from "../../images/info.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
+import { FaReact, FaHtml5, FaPython, FaJava, FaBootstrap  } from "react-icons/fa";
+import { FaCss3 } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
 
 
 
@@ -23,7 +27,7 @@ const InfoSection = ({
     return (
       
         
-        <div style={{ background: '#000000'}} className="text-white row py-5" id='about' >
+        <div  className="text-white row py-5" id='about' >
              
             <div className="col-12 px-0">
                 
@@ -38,37 +42,34 @@ const InfoSection = ({
                             <TopLine>KAITCODES</TopLine>
                             <Heading >ABOUT ME</Heading>
                             <Subtitle>
-                                Fullstack developer with experience in bulding and hosting websites, UI/UX design and research, and data science: research and analysis.
+                                MLB Broadcast engineer and aspiring fullstack developer with experience in bulding and hosting web based applications, UI/UX design, and data analysis.
                             </Subtitle>
-                            <BottomLine>Currently learning: three.js & Blender</BottomLine>
-
-                            <TopLine>Most Utilized Languages:</TopLine>
-                            <Subtitle>
-                               <ul>Javascript, HTML/CSS, Java, LINUX/UNIX, SQL, R, Python </ul>
-                               
-                            </Subtitle>
-
-
+                            <TopLine>TOOLKIT</TopLine>
+                            <Subtitle2>
+                                <FaReact />
+                                <FaBootstrap />
+                                <FaCss3 />
+                                <FaHtml5 />
+                                <FaPython />
+                                <FaJava />
+                                <IoLogoJavascript />
+                            </Subtitle2>
+                            <BottomLine>Currently learning: LIT & three.js </BottomLine>
+                            
                         </div>
                         
 
-
-                        
-                    
                         <div className="col-lg-5 d-flex flex-column px-0 ps-lg-5 mt-5 mt-lg-0">
 
-                            <TrackVisibility>
-                            {({ isVisible }) =>
-                        <div className={isVisible ? "animate__animated animate__pulse animate__infinite animate__slower" : ""}>
+                           
 
                             <img 
                             src={pic} 
                             alt={"letter k in a circle"} 
                             className="h-100 w-100" style={{objectFit:"cover"}}/>
-                            </div>}
+                            </div>
 
-                            </TrackVisibility>
-                        </div>
+                           
 
                         
                     </div>

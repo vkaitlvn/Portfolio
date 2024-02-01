@@ -1,22 +1,62 @@
-/* Button */
-a{
-    text-decoration: none;
-    color: inherit;
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #44107a 0%,
+    #b90d4f 29%,
+    #f0a6cb 67%,
+    #d45c0b 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  font-weight: bold;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
+  display: inline-block;
+  font-size: 80px;
 }
 
-.btn {
-    background-color: white;
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 5000px;
-    transition: all 0.3s;
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 
-.btn:hover {
-    transform: scale(1.15);
+@media only screen and (max-width: 600px) {
+    
 
+    .animate-character {
+        font-size: 20vw; /* Adjust the font size for smaller screens */
+    }
 }
 
+
+.typewriter TopLine {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  

@@ -31,7 +31,7 @@ const toggleHome = () => {
 
 const Footer = () => {
     return (
-        <div className="row " style={{background: "#000000"}}>
+        <div className="row " style={{background: 'rgba(53,10,60,0.517266281512605) 60%'}}>
             <FooterWrap>
                 
                 <SocialMedia>
@@ -42,7 +42,7 @@ const Footer = () => {
                         {/* clickable logo, returns home */}
                         
                         <WebsiteRights>
-                        Website by KAITCODES <FaRegCopyright/> {new Date().getFullYear()} All rights reserved. 
+                        Deployed, coded, & designed by KAITCODES <FaRegCopyright/> {new Date().getFullYear()} All rights reserved. 
                         </WebsiteRights>
                         {/* copyright message */}
 
