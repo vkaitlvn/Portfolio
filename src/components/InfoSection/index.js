@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 import {
@@ -33,16 +32,13 @@ const InfoSection = ({
                 
                 <div className="container-lg">
                 
-                    
-        
-
                     <div className="row px-4 justify-content-center align-items-center">
                         <div className="col-lg-6 mb-4 mb-md-0">
 
                             <TopLine>KAITCODES</TopLine>
                             <Heading >ABOUT ME</Heading>
                             <Subtitle>
-                                MLB Broadcast engineer and aspiring fullstack developer with experience in bulding and hosting web based applications, UI/UX design, and data analysis.
+                                Broadcast engineer and aspiring fullstack developer with experience in bulding and hosting web based applications, UI/UX design, and data analysis.
                             </Subtitle>
                             <TopLine>TOOLKIT</TopLine>
                             <Subtitle2>
@@ -68,10 +64,7 @@ const InfoSection = ({
                             alt={"letter k in a circle"} 
                             className="h-100 w-100" style={{objectFit:"cover"}}/>
                             </div>
-
-                           
-
-                        
+ 
                     </div>
                 </div>
             </div>

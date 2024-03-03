@@ -1,13 +1,10 @@
 // ProjectCard.js
-
 import React from 'react';
 import styled from 'styled-components';
-
 import image1 from '../../images/project1.png';
 import image2 from '../../images/project2.png';
 import image3 from '../../images/playablepiano.png';
 import image4 from '../../images/filmfestdemo.png';
-
 
 const imageMap = {
   image1,
@@ -30,20 +27,21 @@ const ProjectCard = ({ title, description, image, link }) => {
 };
 
 const Card = styled.div`
-  width: 300px;
-  height: 300px;
+  max-width: 300px; 
+  width: 100%; 
   margin: 10px;
-  // border: 5px solid #FFF;
-  border-radius: 40px;
+  border-radius: 30px;
   overflow: hidden;
   color: white;
-  // background: rgba(53,10,60,0.517266281512605) 0%;
   box-shadow: 10px 40px 80px rgba(0, 0, 0, 0.1);
+  display: flex; 
+  flex-direction: column; 
+  background: #887cac;
 `;
 
 const Image = styled.img`
   width: 100%;
-  height: 200px; /* Adjust the height as needed */
+  height: 150px; 
   object-fit: cover;
 `;
 

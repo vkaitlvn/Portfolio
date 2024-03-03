@@ -10,8 +10,9 @@ export const FooterWrap = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1100px;
+    max-width: 100%;
     margin: 0 auto;
+    background: #887cac;
 
 `;
 

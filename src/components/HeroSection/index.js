@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 
-import Video from '../../video/orange.mp4';
+import Video from '../../video/purp.mp4';
 // import Logo from '../../images/logo-no-background.png';
 import 'animate.css';
 import './Hero.css';

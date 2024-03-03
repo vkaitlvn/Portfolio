@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 export const TopLine = styled.div`
-  color: #a9b3d3;
+  color: #887cac;
   font-size: 1.5rem;
   line-height: 16px;
   font-weight: 700;
@@ -24,7 +24,7 @@ export const Heading = styled.h1`
   font-size: 3rem;
   line-height: 1.1;
   font-weight: 600;
-  color: #;
+  color: #fff;
   text-align: left;
 
 

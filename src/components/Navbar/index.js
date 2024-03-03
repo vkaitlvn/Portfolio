@@ -26,11 +26,6 @@ import {
 import Logo from '../../images/logo-white.svg';
 import './Navbar.css';
 
-
-
-// all imports including icons, css files, and effects from react
-
-
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
@@ -86,7 +81,7 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact='true'
-                  offset={-25}
+                  offset={0}
                 >
                   About
                 </NavLinks>
@@ -101,7 +96,7 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact='true'
-                  offset={10}
+                  offset={-140}
                 >
                   Work
                 </NavLinks>
@@ -113,13 +108,11 @@ const Navbar = ({ toggle }) => {
                   duration={500}
                   spy={true}
                   exact='true'
-                  offset={10}
+                  offset={-30}
                 >
                   Connect
                 </NavLinks>
               </NavItem>
-
-              
 
               <NavBtn>
                 
@@ -129,9 +122,6 @@ const Navbar = ({ toggle }) => {
             </NavMenu>
             </div> }
             </TrackVisibility>
-            
-
-            
             
           </NavbarContainer>
         </Nav>
